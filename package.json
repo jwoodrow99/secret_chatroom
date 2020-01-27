@@ -1,0 +1,34 @@
+{
+  "name": "secret_chatroom",
+  "version": "1.0.0",
+  "description": "This is a small node chatroom designed to be quickly implemented, and protect chat data.",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.15.2",
+    "local-ipv4-address": "0.0.2",
+    "socket.io": "^1.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  },
+  "main": "app.js",
+  "scripts": {
+    "sc": "node app.js",
+    "sc-dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwoodrow99/secret_chatroom.git"
+  },
+  "keywords": [
+    "chatroom",
+    "node",
+    "socket"
+  ],
+  "author": "Jack Woodrow",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/jwoodrow99/secret_chatroom/issues"
+  },
+  "homepage": "https://github.com/jwoodrow99/secret_chatroom#readme"
+}
