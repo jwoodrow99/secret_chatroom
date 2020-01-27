@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Secret Chatroom</title>
+        <link rel="stylesheet" href="/css">
+        <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+        <script defer src="/js"></script>
+    </head>
+    
+    <body>
+        <h1>Secret Chatroom</h1>
+        <aside id="data">
+            <p id="num"></p>
+            <p id="users"></p>
+            <p>The panic button below is to be used in emergencies only. In the event that someone starts to snoop around your chat or begins to look over your shoulder, you can quickly press the panic button and it will clear your chat screen as well as everyone elses! This is a security feature for emergencies....</p>
+            <button id="panic">PANIC!</button>
+        </aside>
+        <section id="chat">
+            <ul class="scroll" id="messages"></ul>
+            <form action="">
+                <input id="m" autocomplete="off" /><button>Send</button>
+            </form>
+        </section>
+    </body>
+</html>
