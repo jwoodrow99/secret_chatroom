@@ -22,6 +22,7 @@ app.get('/css', (req, res) => {
 let users = [];
 
 io.on('connection', (socket) => {
+
     socket.on('chat message', (msg) => {
         io.emit('chat message', idName(socket.id) + ": " + msg);
     });
